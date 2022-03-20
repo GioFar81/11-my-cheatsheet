@@ -1,0 +1,105 @@
+/* Main CSS */
+
+body {
+    background-color: #FFFBDB;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 0.4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav, ul, li {
+    background-color: #FFFBDB;
+    display: inline-block;
+    font-size: 2.2rem;
+    padding: 0.15rem 0.3rem;
+    z-index: 2;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #008FCC;
+}
+
+a:active {
+    color: #CC3D00;
+}
+
+header {
+    background-color: #D1E0F0;
+    border-bottom: 2px solid #000;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+nav {
+    position: fixed;
+    top: 4.7rem;
+    width: 100%;
+}
+
+footer {
+    align-items: center;
+    background-color: #30362F;
+    bottom: 0;
+    color: #FFF;
+    display: flex;
+    position: fixed;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+    padding: 0.7rem;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+main {
+    background-color: #D1E0F0;
+    border: 2px solid #000;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    text-align: justify;
+    top: 9rem;
+    width: 60%;
+}
+
+table {
+    margin: 0 auto;
+    min-width: 60%;
+}
+
+th, td {
+    border: 2px solid #30362F;
+    padding: 0.3rem 1.5rem 0.3rem 0.3rem;
+}
+
+th {
+    background-color: #CCA3B8;
+    text-align: center;
+}
+
+/* Odd row */
+tr:nth-of-type(2n+1) {
+    background-color: #E0EAF5;
+}
+
+/* Even row */
+tr:nth-of-type(2n) {
+    background-color: #C1D6EB;
+}
