@@ -9,11 +9,10 @@ Project 11 of the Full-Stack Engineer course on Codecademy. The aim is to:
    far—the sky is the limit!
 
    Possible topics could be:
-
-        * HTML Tables.
-        * Other HTML Tags.
-        * CSS Selectors and Specificity.
-        * Common CSS Properties.
+    * HTML Tables.
+    * Other HTML Tags.
+    * CSS Selectors and Specificity.
+    * Common CSS Properties.
 
    If you choose to document HTML tags, open the hint to see how to include HTML tags as a text in your code.
 
@@ -21,10 +20,9 @@ Project 11 of the Full-Stack Engineer course on Codecademy. The aim is to:
 3. Your site uses HTML tables to display the documentation. Be sure to label the columns in your HTML.
 
    On our example site, we used tables with columns for:
-
-        * The tag or attribute name.
-        * The actual formatted tag eg. <table>
-        * A description of what to use the tag for.
+    * The tag or attribute name
+    * The actual formatted tag eg. `<table>`
+    * A description of what to use the tag for
 
    You can use these same columns or choose your own.
 
