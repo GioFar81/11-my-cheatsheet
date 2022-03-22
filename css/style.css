@@ -1,5 +1,19 @@
 /* Main CSS */
 
+/* roboto-regular - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../font/roboto-v29-latin-regular.eot"); /* IE9 Compat Modes */
+    src: local(""),
+    url("../font/roboto-v29-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/roboto-v29-latin-regular.woff2") format("woff2"),
+    url("../font/roboto-v29-latin-regular.woff") format("woff"),
+    url("../font/roboto-v29-latin-regular.ttf") format("truetype"),
+    url("../font/roboto-v29-latin-regular.svg#Roboto") format("svg");
+}
+
 body {
     background-color: #FFFBDB;
 }
@@ -76,22 +90,46 @@ main {
     position: relative;
     text-align: justify;
     top: 9rem;
-    width: 60%;
+    width: 70%;
 }
 
 table {
-    margin: 0 auto;
-    min-width: 60%;
+    font-family: roboto, arial, sans-serif;
+    margin: 0 auto 2rem;
+    width: 90%;
 }
 
-th, td {
+td {
     border: 2px solid #30362F;
-    padding: 0.3rem 1.5rem 0.3rem 0.3rem;
+    padding: 0.3rem;
 }
 
 th {
-    background-color: #CCA3B8;
+    background-color: #DBBDCC;
+    border: 2px solid #30362F;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.3rem;
     text-align: center;
+    text-transform: uppercase;
+}
+
+th.tabletitle {
+    background-color: #CCA3B8;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+td.tableelement {
+    background-color: #FFB493;
+    font-family: monospace;
+    font-weight: bold;
+    width: 12rem;
+}
+
+td.tablename {
+    width: 10rem;
 }
 
 /* Odd row */
