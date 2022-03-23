@@ -49,12 +49,14 @@ a:active {
 header {
     background-color: #D1E0F0;
     border-bottom: 2px solid #000;
+    font-family: roboto, arial, sans-serif;
     position: fixed;
     width: 100%;
     z-index: 3;
 }
 
 nav {
+    font-family: roboto, arial, sans-serif;
     position: fixed;
     top: 4.7rem;
     width: 100%;
@@ -69,7 +71,7 @@ nav {
 }
 
 #subbar, a {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 footer {
@@ -105,6 +107,13 @@ main {
     width: 70%;
 }
 
+:target {
+    display: block;
+    position: relative;
+    top: -12rem;
+    visibility: hidden;
+}
+
 table {
     font-family: roboto, arial, sans-serif;
     margin: 0 auto 2rem;
@@ -134,10 +143,13 @@ th.tabletitle {
 }
 
 td.tableelement {
-    background-color: #FFB493;
-    font-family: monospace;
+    font-family: monospace, sans-serif;
     font-weight: bold;
     width: 12rem;
+}
+
+.code {
+    background-color: #FFB493;
 }
 
 td.tablename {
