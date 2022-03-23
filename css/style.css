@@ -28,7 +28,7 @@ h1 {
 nav, ul, li {
     background-color: #FFFBDB;
     display: inline-block;
-    font-size: 2.2rem;
+
     padding: 0.15rem 0.3rem;
     z-index: 2;
 }
@@ -60,6 +60,18 @@ nav {
     width: 100%;
 }
 
+#mainbar {
+    display: block;
+}
+
+#mainbar a {
+    font-size: 2.2rem;
+}
+
+#subbar, a {
+    font-size: 1.8rem;
+}
+
 footer {
     align-items: center;
     background-color: #30362F;
@@ -85,11 +97,11 @@ main {
     border-radius: 1rem;
     box-sizing: border-box;
     font-size: 1.1rem;
-    margin: 0 auto;
+    margin: 0 auto 300px;
     padding: 2rem;
     position: relative;
     text-align: justify;
-    top: 9rem;
+    top: 12rem;
     width: 70%;
 }
 
