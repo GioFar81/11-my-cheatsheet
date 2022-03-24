@@ -1,4 +1,4 @@
-/* Main CSS */
+/*------------- UNIVERSAL STYLES -------------*/
 
 /* roboto-regular - latin */
 @font-face {
@@ -18,12 +18,26 @@ body {
     background-color: #FFFBDB;
 }
 
+
+/*------------------ HEADER------------------ */
+
 h1 {
     font-size: 4rem;
     padding: 0.4rem;
     text-align: center;
     text-transform: uppercase;
 }
+
+header {
+    background-color: #D1E0F0;
+    border-bottom: 2px solid #000;
+    font-family: roboto, arial, sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+/*------------------- NAV --------------------*/
 
 nav, ul, li {
     background-color: #FFFBDB;
@@ -47,14 +61,6 @@ a:active {
     color: #CC3D00;
 }
 
-header {
-    background-color: #D1E0F0;
-    border-bottom: 2px solid #000;
-    font-family: roboto, arial, sans-serif;
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-}
 
 nav {
     font-family: roboto, arial, sans-serif;
@@ -75,28 +81,14 @@ nav {
     font-size: 1.5rem;
 }
 
-footer {
-    align-items: center;
-    background-color: #30362F;
-    bottom: 0;
-    color: #FFF;
-    display: flex;
-    position: fixed;
-    text-align: center;
-    vertical-align: middle;
-    width: 100%;
+:target {
+    display: block;
+    position: relative;
+    top: -12rem;
+    visibility: hidden;
 }
 
-footer p {
-    font-size: 1rem;
-    padding: 0.7rem;
-    text-transform: uppercase;
-    z-index: 1;
-}
-
-footer p a {
-    text-align: center;
-}
+/*------------------- MAIN -------------------*/
 
 main {
     background-color: #D1E0F0;
@@ -112,12 +104,6 @@ main {
     width: 70%;
 }
 
-:target {
-    display: block;
-    position: relative;
-    top: -12rem;
-    visibility: hidden;
-}
 
 table {
     font-family: roboto, arial, sans-serif;
@@ -170,3 +156,30 @@ tr:nth-of-type(2n+1) {
 tr:nth-of-type(2n) {
     background-color: #C1D6EB;
 }
+
+/*------------------ FOOTER ------------------*/
+
+footer {
+    align-items: center;
+    background-color: #30362F;
+    bottom: 0;
+    color: #FFF;
+    display: flex;
+    position: fixed;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+    padding: 0.7rem;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+footer p a {
+    text-align: center;
+}
+
+/*-------------| STYLESHEET END |-------------*/
