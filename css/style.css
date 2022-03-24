@@ -28,18 +28,19 @@ h1 {
 nav, ul, li {
     background-color: #FFFBDB;
     display: inline-block;
-
     padding: 0.15rem 0.3rem;
     z-index: 2;
 }
 
 a {
     color: #000;
+    cursor: pointer;
     text-decoration: none;
 }
 
 a:hover {
     color: #008FCC;
+
 }
 
 a:active {
@@ -91,6 +92,10 @@ footer p {
     padding: 0.7rem;
     text-transform: uppercase;
     z-index: 1;
+}
+
+footer p a {
+    text-align: center;
 }
 
 main {
