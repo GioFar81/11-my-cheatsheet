@@ -32,7 +32,8 @@ header {
     position: fixed;
     width: 100%;
     z-index: 3;
-    background-color: inherit;
+    background-color: #E8E8E8;
+    top: 0;
 }
 
 /*------------------- NAV --------------------*/
@@ -60,8 +61,6 @@ a:active {
 
 nav {
     font-family: roboto, arial, sans-serif;
-    position: fixed;
-    top: 4.7rem;
     width: 100%;
     background-color: inherit;
 }
@@ -82,7 +81,7 @@ a {
 :target {
     display: block;
     position: relative;
-    top: -12rem;
+    top: -13rem;
     visibility: hidden;
 }
 
@@ -92,17 +91,22 @@ main {
     box-sizing: border-box;
     font-size: 1.1rem;
     margin: 0 auto 300px;
-    padding: 2rem;
+    padding: 0;
     position: relative;
     text-align: justify;
-    top: 12rem;
-    width: 70%;
+    top: 10rem;
+    width: 100%;
+}
+
+section {
+    padding: 3rem 0 3rem 0;
+    border-bottom: 1px solid black;
 }
 
 table {
     font-family: roboto, arial, sans-serif;
-    margin: 0 auto 2rem;
-    width: 90%;
+    margin: 0 auto;
+    width: 40%;
 }
 
 td {
@@ -111,7 +115,7 @@ td {
 }
 
 th {
-    background-color: #DBBDCC;
+    background-color: #FFA859;
     border: 2px solid #30362F;
     font-size: 1.3rem;
     font-weight: bold;
@@ -120,11 +124,12 @@ th {
     text-transform: uppercase;
 }
 
-th.table-title {
-    background-color: #CCA3B8;
+h2.table-title {
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-weight: bold;
 }
 
 td.table-element {
@@ -134,7 +139,7 @@ td.table-element {
 }
 
 .code {
-    background-color: #FFB493;
+    background-color: #51FF39;
 }
 
 td.table-name {
