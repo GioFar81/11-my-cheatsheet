@@ -21,10 +21,11 @@ body {
 /*------------------ HEADER ------------------*/
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 0.4rem;
     text-align: center;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 header {
@@ -39,7 +40,6 @@ header {
 /*------------------- NAV --------------------*/
 
 nav, ul, li {
-
     display: inline-block;
     padding: 0.15rem 0.3rem;
     z-index: 2;
@@ -81,7 +81,7 @@ a {
 :target {
     display: block;
     position: relative;
-    top: -13rem;
+    top: -12rem;
     visibility: hidden;
 }
 
@@ -94,7 +94,7 @@ main {
     padding: 0;
     position: relative;
     text-align: justify;
-    top: 10rem;
+    top: 9rem;
     width: 100%;
 }
 
@@ -103,15 +103,18 @@ section {
     border-bottom: 1px solid black;
 }
 
+section:nth-of-type(2n) {
+    background-color: #C0C0C0;
+}
+
+section:nth-of-type(2n + 1) {
+    background-color: #949494;
+}
+
 table {
     font-family: roboto, arial, sans-serif;
     margin: 0 auto;
-    width: 40%;
-}
-
-td {
-    border: 2px solid #30362F;
-    padding: 0.5rem;
+    width: 50%;
 }
 
 th {
@@ -124,12 +127,20 @@ th {
     text-transform: uppercase;
 }
 
+td {
+    border: 2px solid #30362F;
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
 h2.table-title {
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 2rem;
     font-weight: bold;
+    font-family: "Roboto", sans-serif;
 }
 
 td.table-element {
@@ -172,8 +183,7 @@ footer {
 
 footer p {
     font-size: 1rem;
-    padding: 0.7rem;
-    text-transform: uppercase;
+    padding: 0.5rem;
     z-index: 1;
 }
 
