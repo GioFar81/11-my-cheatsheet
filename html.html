@@ -3,250 +3,234 @@
     <head>
         <!-- Created by farig at 20.03.2022 -->
         <meta charset="UTF-8">
-        <meta name="description" content="Cheatsheet HTML">
-        <meta name="keywords" content="cheatsheet,html,tables,">
-        <meta name="author" content="Giovanni Farina">
-        <meta name="generator" content="PyCharm">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
+        <meta content="Cheatsheet HTML" name="description">
+        <meta content="cheatsheet,html,tables," name="keywords">
+        <meta content="Giovanni Farina" name="author">
+        <meta content="PyCharm" name="generator">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+
         <!-- CSS Reset -->
-        <link rel="stylesheet" href="./css/reset.css">
-        
+        <link href="./css/reset.css" rel="stylesheet">
+
         <!-- Main CSS -->
-        <link rel="stylesheet" href="./css/style.css">
-        
+        <link href="./css/style.css" rel="stylesheet">
+
         <title>HTML Cheatsheet</title>
     </head>
-    
+
     <body>
-        
         <!-- HEADER -->
         <header>
             <h1>HTML Cheatsheet</h1>
+            <!-- NAVIGATION BAR -->
+            <nav>
+                <ul id="main-bar">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./html.html">HTML</a></li>
+                    <li><a href="./css.html">CSS</a></li>
+                </ul>
+                <ul id="sub-bar">
+                    <li><a href="#table-html">HTML</a></li>
+                    <li><a href="#table-metadata">METADATA</a></li>
+                    <li><a href="#table-structure">STRUCTURE</a></li>
+                    <li><a href="#table-headings">HEADINGS</a></li>
+                </ul>
+            </nav>
         </header>
-        
-        <!-- NAVIGATION BAR -->
-        <nav>
-            <ul id="mainbar">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./html.html">HTML</a></li>
-                <li><a href="./css.html">CSS</a></li>
-            </ul>
-            <ul id="subbar">
-                <li><a href="#tablehtml">HTML</a></li>
-                <li><a href="#tablemetadata">METADATA</a></li>
-                <li><a href="#tablestructure">STRUCTURE</a></li>
-                <li><a href="#tableheadings">HEADINGS</a></li>
-            </ul>
-        </nav>
-        
+
         <!-- MAIN BODY -->
         <main>
-            <div id="tablehtml"></div>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3" class="tabletitle">HTML Base structure</th>
-                    </tr>
-                    <tr>
-                        <th scope="col">Element</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;html&gt;&lt;/html&gt;</span></td>
-                        <td class="tablename">HTML element</td>
-                        <td>HTML root that includes everything that is inside the HTML</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;head&gt;&lt;/head&gt;</span></td>
-                        <td class="tablename">Head element</td>
-                        <td>It contains the metadata of an HTML, and it's not visible</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;body&gt;&lt;/body&gt;</span></td>
-                        <td class="tablename">Body element</td>
-                        <td>Contains all the visible part of a page</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div id="tablemetadata"></div>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3" class="tabletitle">HTML Metadata</th>
-                    </tr>
-                    <tr>
-                        <th scope="col">Element</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;link&gt;</span></td>
-                        <td class="tablename">Link element</td>
-                        <td>To link external resources such as CSS, fonts, favicons, etc</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;meta&gt;</span></td>
-                        <td class="tablename">Meta element</td>
-                        <td>Contains meta that cannot be represented by base, link, script, style or title</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;title&gt;</span></td>
-                        <td class="tablename">Title element</td>
-                        <td>Title of the page, it shows in the browser title bar and tab</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div id="tablestructure"></div>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3" class="tabletitle">HTML structure</th>
-                    </tr>
-                    <tr>
-                        <th scope="col">Element</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;address&gt;&lt;/address&gt;</span></td>
-                        <td class="tablename">Address element</td>
-                        <td>Includes contact information person, people, and organizations</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;article&gt;&lt;/article&gt;</span></td>
-                        <td class="tablename">Article element</td>
-                        <td>Represents a self-contained composition in a document, page, application, or site</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;aside&gt;&lt;/aside&gt;</span></td>
-                        <td class="tablename">Aside element</td>
-                        <td>Represents that is indirectly related to the content of the main content</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;footer&gt;&lt;/footer&gt;</span></td>
-                        <td class="tablename">Footer element</td>
-                        <td>Includes information about the author, copyrights and related links</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;header&gt;&lt;/header&gt;</span></td>
-                        <td class="tablename">Header element</td>
-                        <td>It can contain the Title with logo, search bar, and the navigation aid</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;h1to6&gt;&lt;/h1to6&gt;</span></td>
-                        <td class="tablename">Heading element</td>
-                        <td>Headings to structure the content</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;main&gt;&lt;/main&gt;</span></td>
-                        <td class="tablename">Main element</td>
-                        <td>It contains the main content of the page and its topic</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;nav&gt;&lt;/nav&gt;</span></td>
-                        <td class="tablename">Navigation element</td>
-                        <td>It contains the navigation bar used to navigate the pages and sections of the site</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;section&gt;&lt;/section&gt;</span></td>
-                        <td class="tablename">Section element</td>
-                        <td>Usually used when the element mentioned above are not relevant</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div id="tableheadings"></div>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3" class="tabletitle">Headings</th>
-                    </tr>
-                    <tr>
-                        <th scope="col">Element</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;h1&gt;&lt;/h1&gt;</span></td>
-                        <td class="tablename">Heading 1</td>
-                        <td>Section Headings Level 1</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;h2&gt;&lt;/h2&gt;</span></td>
-                        <td class="tablename">Heading 2</td>
-                        <td>Section Headings Level 2</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;h3&gt;&lt;/h3&gt;</span></td>
-                        <td class="tablename">Heading 3</td>
-                        <td>Section Headings Level 3</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;h4&gt;&lt;/h4&gt;</span></td>
-                        <td class="tablename">Heading 4</td>
-                        <td>Section Headings Level 4</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;h5&gt;&lt;/h5&gt;</span></td>
-                        <td class="tablename">Heading 5</td>
-                        <td>Section Headings Level 5</td>
-                    </tr>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;h6&gt;&lt;/h6&gt;</span></td>
-                        <td class="tablename">Heading 6</td>
-                        <td>Section Headings Level 6</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <!--
-            <div id=""></div>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3" class="tabletitle"></th>
-                    </tr>
-                    <tr>
-                        <th scope="col">Element</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="tableelement"><span class="code">&lt;&gt;&lt;/&gt;</span></td>
-                        <td class="tablename"></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-            -->
+
+            <section>
+                <div id="table-html"></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table-title" colspan="3">HTML Base structure</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Element</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;html&gt;&lt;/html&gt;</span></td>
+                            <td class="table-name">HTML element</td>
+                            <td>HTML root that includes everything that is inside the HTML</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;head&gt;&lt;/head&gt;</span></td>
+                            <td class="table-name">Head element</td>
+                            <td>It contains the metadata of an HTML, and it's not visible</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;body&gt;&lt;/body&gt;</span></td>
+                            <td class="table-name">Body element</td>
+                            <td>Contains all the visible parts of a page</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <div id="table-metadata"></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table-title" colspan="3">HTML Metadata</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Element</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;link&gt;</span></td>
+                            <td class="table-name">Link element</td>
+                            <td>To link external resources such as CSS, fonts, favicons, etc</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;meta&gt;</span></td>
+                            <td class="table-name">Meta element</td>
+                            <td>Contains meta that cannot be represented by base, link, script, style or title</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;title&gt;</span></td>
+                            <td class="table-name">Title element</td>
+                            <td>Title of the page, it shows in the browser title bar and tab</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <div id="table-structure"></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table-title" colspan="3">HTML structure</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Element</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;address&gt;&lt;/address&gt;</span></td>
+                            <td class="table-name">Address element</td>
+                            <td>Includes contact information person, people, and organizations</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;article&gt;&lt;/article&gt;</span></td>
+                            <td class="table-name">Article element</td>
+                            <td>Represents a self-contained composition in a document, page, application, or site</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;aside&gt;&lt;/aside&gt;</span></td>
+                            <td class="table-name">Aside element</td>
+                            <td>Represents that is indirectly related to the content of the main content</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;footer&gt;&lt;/footer&gt;</span></td>
+                            <td class="table-name">Footer element</td>
+                            <td>Includes information about the author, copyrights and related links</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;header&gt;&lt;/header&gt;</span></td>
+                            <td class="table-name">Header element</td>
+                            <td>It can contain the Title with logo, search bar, and the navigation aid</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;h1to6&gt;&lt;/h1to6&gt;</span></td>
+                            <td class="table-name">Heading element</td>
+                            <td>Headings to structure the content</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;main&gt;&lt;/main&gt;</span></td>
+                            <td class="table-name">Main element</td>
+                            <td>It contains the main content of the page and its topic</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;nav&gt;&lt;/nav&gt;</span></td>
+                            <td class="table-name">Navigation element</td>
+                            <td>It contains the navigation bar used to navigate the pages and sections of the site</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;section&gt;&lt;/section&gt;</span></td>
+                            <td class="table-name">Section element</td>
+                            <td>Usually used when the element mentioned above is not relevant</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <div id="table-headings"></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table-title" colspan="3">Headings</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Element</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;h1&gt;&lt;/h1&gt;</span></td>
+                            <td class="table-name">Heading 1</td>
+                            <td>Section Headings Level 1</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;h2&gt;&lt;/h2&gt;</span></td>
+                            <td class="table-name">Heading 2</td>
+                            <td>Section Headings Level 2</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;h3&gt;&lt;/h3&gt;</span></td>
+                            <td class="table-name">Heading 3</td>
+                            <td>Section Headings Level 3</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;h4&gt;&lt;/h4&gt;</span></td>
+                            <td class="table-name">Heading 4</td>
+                            <td>Section Headings Level 4</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;h5&gt;&lt;/h5&gt;</span></td>
+                            <td class="table-name">Heading 5</td>
+                            <td>Section Headings Level 5</td>
+                        </tr>
+                        <tr>
+                            <td class="table-element"><span class="code">&lt;h6&gt;&lt;/h6&gt;</span></td>
+                            <td class="table-name">Heading 6</td>
+                            <td>Section Headings Level 6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </main>
-        
+
         <!-- BODY FOOTER -->
         <footer>
             <p>
-                <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px;" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"/>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img alt="Valid CSS!" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" style="border:0;width:88px;height:31px;"/>
                 </a>
             </p>
             <div>
                 <p>Created by: &copy;Giovanni Farina</p>
             </div>
         </footer>
-    
+
     </body>
 </html>

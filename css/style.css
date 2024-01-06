@@ -15,11 +15,10 @@
 }
 
 body {
-    background-color: #FFFBDB;
+    background-color: #F2F2F2;
 }
 
-
-/*------------------ HEADER------------------ */
+/*------------------ HEADER ------------------*/
 
 h1 {
     font-size: 4rem;
@@ -29,55 +28,54 @@ h1 {
 }
 
 header {
-    background-color: #D1E0F0;
-    border-bottom: 2px solid #000;
     font-family: roboto, arial, sans-serif;
     position: fixed;
     width: 100%;
     z-index: 3;
+    background-color: inherit;
 }
 
 /*------------------- NAV --------------------*/
 
 nav, ul, li {
-    background-color: #FFFBDB;
+
     display: inline-block;
     padding: 0.15rem 0.3rem;
     z-index: 2;
 }
 
 a {
-    color: #000;
+    color: #000000;
     cursor: pointer;
     text-decoration: none;
 }
 
 a:hover {
     color: #008FCC;
-
 }
 
 a:active {
     color: #CC3D00;
 }
 
-
 nav {
     font-family: roboto, arial, sans-serif;
     position: fixed;
     top: 4.7rem;
     width: 100%;
+    background-color: inherit;
 }
 
-#mainbar {
+#main-bar {
     display: block;
 }
 
-#mainbar a {
+#main-bar a {
     font-size: 2.2rem;
 }
 
-#subbar, a {
+#sub-bar,
+a {
     font-size: 1.5rem;
 }
 
@@ -91,9 +89,6 @@ nav {
 /*------------------- MAIN -------------------*/
 
 main {
-    background-color: #D1E0F0;
-    border: 2px solid #000;
-    border-radius: 1rem;
     box-sizing: border-box;
     font-size: 1.1rem;
     margin: 0 auto 300px;
@@ -104,7 +99,6 @@ main {
     width: 70%;
 }
 
-
 table {
     font-family: roboto, arial, sans-serif;
     margin: 0 auto 2rem;
@@ -113,7 +107,7 @@ table {
 
 td {
     border: 2px solid #30362F;
-    padding: 0.3rem;
+    padding: 0.5rem;
 }
 
 th {
@@ -126,14 +120,14 @@ th {
     text-transform: uppercase;
 }
 
-th.tabletitle {
+th.table-title {
     background-color: #CCA3B8;
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
 }
 
-td.tableelement {
+td.table-element {
     font-family: monospace, sans-serif;
     font-weight: bold;
     width: 12rem;
@@ -143,12 +137,12 @@ td.tableelement {
     background-color: #FFB493;
 }
 
-td.tablename {
+td.table-name {
     width: 10rem;
 }
 
 /* Odd row */
-tr:nth-of-type(2n+1) {
+tr:nth-of-type(2n + 1) {
     background-color: #E0EAF5;
 }
 
@@ -163,7 +157,7 @@ footer {
     align-items: center;
     background-color: #30362F;
     bottom: 0;
-    color: #FFF;
+    color: #FFFFFF;
     display: flex;
     position: fixed;
     text-align: center;
