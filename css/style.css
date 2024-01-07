@@ -2,19 +2,23 @@
 
 /* roboto-regular - latin */
 @font-face {
-    font-family: "Roboto";
+    font-family: "roboto";
+    src: url("../font/roboto_bold-webfont.woff2") format("woff2"),
+    url("../font/roboto_bold-webfont.woff") format("woff");
+    font-weight: bold;
     font-style: normal;
-    font-weight: 400;
-    src: url("../font/roboto-v29-latin-regular.eot"); /* IE9 Compat Modes */
-    src: local(""),
-    url("../font/roboto-v29-latin-regular.eot?#iefix") format("embedded-opentype"),
-    url("../font/roboto-v29-latin-regular.woff2") format("woff2"),
-    url("../font/roboto-v29-latin-regular.woff") format("woff"),
-    url("../font/roboto-v29-latin-regular.ttf") format("truetype"),
-    url("../font/roboto-v29-latin-regular.svg#Roboto") format("svg");
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../font/roboto_regular-webfont.woff2") format("woff2"),
+    url("../font/roboto_regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
+    font-family: roboto, sans-serif;
     background-color: #F2F2F2;
 }
 
@@ -22,7 +26,7 @@ body {
 
 h1 {
     font-size: 3rem;
-    padding: 0.4rem;
+    padding: 0.5rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -35,6 +39,7 @@ header {
     z-index: 3;
     background-color: #E8E8E8;
     top: 0;
+    height: 8rem;
 }
 
 /*------------------- NAV --------------------*/
@@ -60,8 +65,12 @@ a:active {
 }
 
 nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 80%;
     font-family: roboto, arial, sans-serif;
-    width: 100%;
+    margin: auto;
     background-color: inherit;
 }
 
@@ -73,19 +82,40 @@ nav {
     font-size: 2.2rem;
 }
 
-#sub-bar,
-a {
+#sub-bar, a {
     font-size: 1.5rem;
+    justify-items: center;
 }
 
 :target {
     display: block;
     position: relative;
-    top: -12rem;
+    top: -11rem;
     visibility: hidden;
 }
 
 /*------------------- MAIN -------------------*/
+
+div.work-progress {
+    font-size: 8rem;
+    font-family: roboto, sans-serif;
+    font-weight: bold;
+    background-color: red;
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    text-align: center;
+    padding: 3rem;
+    opacity: 90%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 2rem;
+}
 
 main {
     box-sizing: border-box;
@@ -94,13 +124,21 @@ main {
     padding: 0;
     position: relative;
     text-align: justify;
-    top: 9rem;
+    top: 8rem;
     width: 100%;
+}
+
+main.homepage {
+    width: 70%;
+    padding: 4rem;
+}
+
+main.homepage section {
+    background-color: inherit;
 }
 
 section {
     padding: 3rem 0 3rem 0;
-    border-bottom: 1px solid black;
 }
 
 section:nth-of-type(2n) {
@@ -109,6 +147,11 @@ section:nth-of-type(2n) {
 
 section:nth-of-type(2n + 1) {
     background-color: #949494;
+}
+
+section:last-of-type {
+    margin-bottom: 60vh;
+    box-sizing: border-box;
 }
 
 table {
@@ -151,6 +194,7 @@ td.table-element {
 
 .code {
     background-color: #51FF39;
+    font-family: roboto, sans-serif;
 }
 
 td.table-name {
@@ -170,25 +214,20 @@ tr:nth-of-type(2n) {
 /*------------------ FOOTER ------------------*/
 
 footer {
-    align-items: center;
+    /* align-items: center; */
     background-color: #30362F;
     bottom: 0;
     color: #FFFFFF;
-    display: flex;
     position: fixed;
     text-align: center;
-    vertical-align: middle;
     width: 100%;
 }
 
-footer p {
-    font-size: 1rem;
+footer div {
+    font-family: roboto, sans-serif;
+    font-size: 0.8rem;
     padding: 0.5rem;
     z-index: 1;
-}
-
-footer p a {
-    text-align: center;
 }
 
 /*-------------| STYLESHEET END |-------------*/
